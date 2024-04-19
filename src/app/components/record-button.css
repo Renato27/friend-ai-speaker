@@ -1,0 +1,30 @@
+.recordingButton {
+  border: 3px solid #fff;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  background-color: #ff0000;
+  color: white;
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  position: relative;
+  transition: background-color 0.3s, border-radius 0.3s, width 0.3s, height 0.3s;
+}
+
+.recordingButton:active,
+.recordingButton.recording {
+  background-color: white; 
+}
+
+.recordingButton.recording::before {
+  content: "";
+  position: absolute;
+  width: 20px; 
+  height: 20px;
+  background-color: #ff0000;
+  border-radius: 4px; 
+}
